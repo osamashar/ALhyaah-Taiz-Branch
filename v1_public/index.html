@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نظام رفع الملفات - الحياة</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>📁 نظام رفع الملفات الاحترافي</h1>
+      <p>رفع ملفاتك بسهولة وأمان</p>
+    </header>
+
+    <main class="main-content">
+      <!-- منطقة الرفع بالسحب والإفلات -->
+      <div class="upload-area" id="uploadArea">
+        <div class="upload-icon">📤</div>
+        <h2>اسحب الملفات هنا</h2>
+        <p>أو انقر لاختيار الملفات</p>
+        <input type="file" id="fileInput" multiple hidden>
+      </div>
+
+      <!-- معلومات الملفات المختارة -->
+      <div class="file-info" id="fileInfo" style="display: none;">
+        <h3>الملفات المختارة:</h3>
+        <div id="filesList"></div>
+        <div class="action-buttons">
+          <button class="btn btn-primary" id="uploadBtn">رفع الملفات</button>
+          <button class="btn btn-secondary" id="cancelBtn">إلغاء</button>
+        </div>
+      </div>
+
+      <!-- شريط التقدم -->
+      <div class="progress-container" id="progressContainer" style="display: none;">
+        <div class="progress-item">
+          <span id="progressFile"></span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span id="progressPercent">0%</span>
+        </div>
+      </div>
+
+      <!-- الرسائل -->
+      <div id="messageBox" class="message-box"></div>
+
+      <!-- قائمة الملفات المرفوعة -->
+      <section class="uploaded-files">
+        <h2>الملفات المرفوعة</h2>
+        <div id="uploadedFilesList" class="files-grid">
+          <p>جاري تحميل الملفات...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 نظام رفع الملفات - جميع الحقوق محفوظة</p>
+    </footer>
+  </div>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>
