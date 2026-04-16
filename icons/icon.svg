@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="#1A3A5C"/>
+  <!-- Geometric pattern -->
+  <polygon points="256,30 482,482 30,482" fill="none" stroke="#C8922A" stroke-width="8" opacity="0.2"/>
+  <polygon points="256,80 430,430 82,430" fill="none" stroke="#C8922A" stroke-width="6" opacity="0.15"/>
+  <!-- Shield body -->
+  <path d="M256 100 L380 155 L380 270 Q380 360 256 420 Q132 360 132 270 L132 155 Z"
+        fill="none" stroke="#C8922A" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M256 120 L365 170 L365 270 Q365 348 256 400 Q147 348 147 270 L147 170 Z"
+        fill="rgba(200,146,42,0.12)"/>
+  <!-- Star of protection (simplified emblem) -->
+  <circle cx="256" cy="260" r="55" fill="none" stroke="#C8922A" stroke-width="8"/>
+  <circle cx="256" cy="260" r="38" fill="rgba(200,146,42,0.2)"/>
+  <!-- Arabic letter alef-lam hint -->
+  <text x="256" y="282" text-anchor="middle" font-family="Amiri,serif" font-size="44" fill="#C8922A" font-weight="700">ت</text>
+  <!-- Bottom text area -->
+  <rect x="100" y="448" width="312" height="4" rx="2" fill="#C8922A" opacity="0.5"/>
+  <!-- Teal accent bar at top -->
+  <rect x="0" y="0" width="512" height="10" rx="0" fill="#1D7A8A"/>
+  <rect x="0" y="502" width="512" height="10" rx="0" fill="#1D7A8A"/>
+</svg>
